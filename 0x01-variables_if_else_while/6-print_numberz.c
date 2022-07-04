@@ -1,18 +1,20 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - entry point
- *
- * Return : Always 0 (Success)
+ * Description: program
+ * Return : Always 1 (Success)
  */
 int main(void)
 {
-	int ch;
-	
-	for (ch = 48; ch <= 57; ch++)
-	{
-	putchar(ch);
-	}
-	putchar(10);
+static int ch;
+
+for (ch = 48; ch <= 57; ch++)
+{
+putchar(ch);
+}
+putchar(10);
+putchar('\n');
 
 return (0);
 }
