@@ -5,6 +5,7 @@
 /**
  * _isdigit - check for numbers
  *
+ * @c: parameter to print
  * Return: 0 or 1
  */
 
