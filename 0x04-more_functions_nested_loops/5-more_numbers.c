@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print most num exclude 2 and 4
+ * more_numbers - print most num exclude 2 and 4
  *
  * Return: 0
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int n;
+	char n, c;
+	int i = 0;
 
-	for (n = 0; n <= 9; n++)
+	while (i < 10)
 	{
-		if (n == 2 || n == 4)
+		for (n = 0; n <= 14; n++)
 		{
-			continue;
+			c = n;
+			if (n > 9)
+			{
+				_putchar('1');
+				c = n % 10;
+			}
+			_putchar('0' + c);
 
 		}
-
-		else
-		{
-			_putchar((n % 10) + '0');
-
-		}
+		_putchar('\n');
+		i++;
 
 	}
-	_putchar('\n');
-
 }
