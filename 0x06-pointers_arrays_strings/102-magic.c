@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-/**
- * main - entry point for A dream doesn't become reality through magic;
- *
- * Return: 0 always
- */
+
 
 int main(void)
 
