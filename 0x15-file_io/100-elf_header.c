@@ -1,7 +1,3 @@
-/*
- * File: 100-elf_header.c
- */
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -110,7 +106,7 @@ void print_data(unsigned char *e_ident)
 		case ELFDATA2MSB:
 			printf("2's complement, big endian\n");
 			break;
-			default;
+		default:
 			printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 		}
 }
