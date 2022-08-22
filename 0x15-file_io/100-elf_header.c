@@ -1,3 +1,6 @@
+/*
+ * File: 100-elf_header.c
+ */
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -122,13 +125,13 @@ void print_version(unsigned char *e_ident)
 
 	switch (e_ident[EI_VERSION])
 	{
-		case EV_CURRENT:
-			printf(" (current)\n");
-			break;
-		default:
-			printf("\n");
-			break;
-		}
+	case EV_CURRENT:
+		printf(" (current)\n");
+		break;
+	default:
+		printf("\n");
+		break;
+	}
 }
 
 /**
